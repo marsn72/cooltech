@@ -1,0 +1,10 @@
+/dist
+/app/bower
+/node_modules
+/.git
+/.idea
+
+/build/vendor
+/build/bower
+/vendor/
+
