@@ -1,10 +1,8 @@
-/dist
-/app/bower
+
+/bower
 /node_modules
 /.git
+/.sass-cache
 /.idea
 
-/build/vendor
-/build/bower
-/vendor/
 

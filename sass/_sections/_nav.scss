@@ -1,0 +1,33 @@
+nav.nav{
+  margin-bottom: 27px;
+  border-bottom: 2px solid #ebedef;
+  background: #ffffff;
+
+  .nav__list{
+    position: relative;
+    margin: 0;
+    padding:0;
+    font-size: 0;
+
+    .nav__item{
+      display: inline-block;
+      
+      &.active .nav__link{
+        background: #ff6600;
+        color: #ffffff;
+      }
+      &:hover{
+        background: #e4e2e2;
+      }
+
+      .nav__link{
+        display: block;
+        padding: 15px 13px;
+        font-family: 'open_sanssemibold';
+        font-size: 16px;
+        color: #333333;
+        text-decoration: none;
+      }
+    }
+  }
+}

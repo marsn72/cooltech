@@ -1,0 +1,123 @@
+@import "../_misc/mixins";
+$icon-spacing: 70px;
+$icon-layout: horizontal;
+@import 'icon/*.png';
+
+/* header one */
+.header__one {
+  padding: 25px 0;
+  @include clearfix;
+  background: #ffffff;
+
+  .header__socials {
+    float: left;
+
+    .header__socials-item {
+      display: inline-block;
+      width: 26px;
+      height: 26px;
+      margin-left: 16px;
+      text-indent: -9999px;
+
+      &:first-child{
+        margin-left: 0;
+      }
+
+      &_fb {
+        @include icon-sprite(fb);
+      }
+      &_vk {
+        @include icon-sprite(vk);
+      }
+      &_tw {
+        @include icon-sprite(tw);
+      }
+    }
+    .header__socials-link {
+      text-decoration: none;
+    }
+  }
+  .header__phone {
+    float: right;
+  }
+
+  .header__adress {
+    float: left;
+    margin-left: 582px;
+  }
+}
+
+/* End header one */
+
+/* header two */
+
+.header__two{
+  padding: 30px 0;
+  border-top: 2px solid #ebedef;
+
+  .header__logo{
+    float: left;
+    margin-left: 0;
+  }
+
+  .header__search{
+    float: left;
+    margin-left: 57px;
+    border: none;
+    border-right: none;
+    .header__search-input{
+      box-sizing: border-box;
+      width: 288px;
+      height: 35px;
+      padding: 10px 17px;
+      margin-right: 0;
+      font-family: 'open_sanslight';
+      font-size: 14px;
+      border: 1px solid #dee1e4;
+      border-right: none;
+      @include border-radius(5px 0 0 5px);
+      outline: none;
+      background: #fbfbfb;
+      color: #909090;
+      vertical-align: top;
+    }
+    .header__search-submit{
+      box-sizing: border-box;
+      display: inline-block;
+      margin-left: -5px;
+      width: 79px;
+      height: 35px;
+      font-family: 'open_sanssemibold';
+      font-size: 16px;
+      border: none;
+      outline: none;
+      -webkit-border-radius: 0 5px 5px 0;
+      -moz-border-radius: 0 5px 5px 0;
+      border-radius: 0 5px 5px 0;
+      background: #ff6600;
+      color: #ffffff;
+    }
+  }
+  .header__menu{
+    float: right;
+    margin: 5px 0 0;
+  }
+
+  .header__menu-item{
+    @include inlineblock;
+    margin-left: 35px;
+    &:first-child{
+      margin-left: 0;
+    }
+  }
+
+  .header__menu-link{
+    font-family: 'open_sanssemibold';
+    font-size: 16px;
+    color: #5a5a5a;
+    &:hover{
+      color: #ff6600;
+    }
+  }
+
+}

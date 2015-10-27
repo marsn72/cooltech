@@ -18,14 +18,14 @@ var
 		},
 
 		scss : {
-			location    : 'styles/**/*.scss',
+			location    : 'sass/**/*.scss',
 			entryPoint  : 'css/main.css'
 		},
 
 		compass : {
 			configFile  : 'config.rb',
 			cssFolder   : 'css',
-			scssFolder  : 'styles',
+			scssFolder  : 'sass',
 			imgFolder   : 'img'
 		},
 

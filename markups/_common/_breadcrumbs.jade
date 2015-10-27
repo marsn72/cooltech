@@ -1,0 +1,6 @@
+section.breadcrumbs
+    .container
+        ul.breadcrumbs__list
+            each breadcrumb, indx in ["Главная", "Каталог"]
+                li(class="breadcrumbs__item " + ((indx == 1)? "last" : ""))
+                    a(href='#').breadcrumbs__link= breadcrumb

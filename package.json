@@ -1,12 +1,19 @@
 {
-  "name": "portfolio",
+  "name": "loft-template",
   "version": "1.0.0",
+  "description": "template for good works",
+  "main": "gulpfile.js",
+  "repository": "https://github.com/wowua/loftschool-template",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Vladimir Sabantsev",
+  "license": "ISC",
   "devDependencies": {
-    "browser-sync": "^2.9.6",
+    "browser-sync": "^2.9.7",
     "gulp": "^3.9.0",
     "gulp-compass": "^2.1.0",
     "gulp-jade": "^1.1.0",
-    "gulp-ruby-sass": "^2.0.5",
-    "gulp-scss": "^1.3.15"
+    "gulp-plumber": "^1.0.1"
   }
 }
